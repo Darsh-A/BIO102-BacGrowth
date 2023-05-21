@@ -30,6 +30,7 @@ to RUN:
 ```python3 imgProcess.py```
 
 or run it through your editor
+**A useful Note: This image detection can work with real life images as well, just need to input the image in the code (imgProcess.py). Though you need to know the dimensions of your image to relate the output values**
 
 ## Result
 We can derive various results through our fun little animation
