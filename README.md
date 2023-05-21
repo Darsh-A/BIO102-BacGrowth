@@ -3,6 +3,7 @@ This Project gives a visual representation of the growth of Bacteria in Agar pla
 
 ### Pre-requisites
 The Project needs some packages to be installed before running the project.
+
 Python 3.10
 - `manimce`
 - `cv2 (opencv-python)`
@@ -13,11 +14,16 @@ This simulates the growth of bacteria.
 The Growth parameters can be tweaked from the main.py file.
 
 to RUN:
+
 This will save the very last frame of the animation and is required to run the image processing file.
+
 ```manimce -pql -s bacteria.py BacteriaGrowth ```
 
+
 Additionally you can also create a video file by running:
+
 ```manimce -pql bacteria.py BacteriaGrowth ```
+
 Note: since this doesnt create a image file to process, later stages wont work
       due to lack of time i couldnt find a work around to display the video preview and create an image file at the same time.
 
@@ -28,7 +34,9 @@ This will create a video file in the media folder.
 Now to identify the colonies and their diameters we use a simple image processing technique through opencv.
 
 to RUN:
+
 ```python3 imgProcess.py```
+
 or run it through your editor
 
 ## Result
@@ -37,7 +45,9 @@ one of them which i derived is very intuative and simple to observe
 The Result file displays the Graph between Diameter and number of colonies
 
 to RUN:
+
 ```python3 Result.py```
+
 or run it through your editor
 
 
