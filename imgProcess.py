@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 
 # Load the image and convert it to grayscale
-image = cv2.imread('media\images\main\BacteriaGrowth_ManimCE_v0.17.3.png')
+image = cv2.imread('BacteriaGrowth0000.png')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # Apply image thresholding to obtain a binary image

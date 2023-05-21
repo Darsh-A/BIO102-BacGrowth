@@ -17,15 +17,7 @@ to RUN:
 
 This will save the very last frame of the animation and is required to run the image processing file.
 
-```manimce -pql -s bacteria.py BacteriaGrowth ```
-
-
-Additionally you can also create a video file by running:
-
 ```manimce -pql bacteria.py BacteriaGrowth ```
-
-Note: since this doesnt create a image file to process, later stages wont work
-      due to lack of time i couldnt find a work around to display the video preview and create an image file at the same time.
 
 (might take a few seconds to run depending on the number of bacterias input)
 This will create a video file in the media folder.
@@ -52,9 +44,14 @@ or run it through your editor
 
 
 ### Additional Notes:
-All media files are stored in media folder
+##### All media files are stored in media folder
 Bacteria on agar Plate - `media/images/main/BacteriaGrowth_ManimCE_v0.17.2.png`
 
 Colonies on agar Plate - `media/images/main/colonies.jpg`
 
 Result Graph - `media/images/main/Result.png`
+
+##### Drawbacks
+- There are few factors missing in the simulation as this is to be taken as a fun project and not a scientific one. Though one could easily add those factors in the simulation.
+
+- The imagee processing is not very accurate. As due to lack of time, 

@@ -10,10 +10,12 @@ manim main.py CircleWithDot -pql -s
 
 from manim import *
 import random
+from pathlib import Path
+from PIL import Image
 
 deviation_of_new_bacteria = 30  # Note this is Inverse check line38
-numer_of_bacteria = 200
-probability_of_new_colony = 0.35
+numer_of_bacteria = 400
+probability_of_new_colony = 0.30
 
 # Create any random Point inside the Circle
 def random_point_in_circle(circle):
@@ -75,3 +77,8 @@ class BacteriaGrowth(Scene):
 
             self.add(dot)
             self.wait(0.1)
+
+        self.renderer.file_writer.output_image(Image.fromarray(self.renderer.get_frame()), 
+        Path("BacteriaGrowth"), 
+        ".png", 
+        config["zero_pad"])
